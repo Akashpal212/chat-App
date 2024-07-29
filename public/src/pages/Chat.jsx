@@ -53,7 +53,7 @@ function Chat() {
     <Container>
       <div className="container">
         <Contacts contacts={contacts} currentUser={currentUser} changeChat={handleChatChange} />
-        {isLoaded && currentChat === undefined ? (<Welcome currentUser={currentUser} />) : (<ChatContainer currentUser={currentUser} />)}
+        {isLoaded && currentChat === undefined ? (<Welcome currentUser={currentUser} />) : (<ChatContainer currentChat={currentChat} />)}
       </div>
     </Container>
   );
